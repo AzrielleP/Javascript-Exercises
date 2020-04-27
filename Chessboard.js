@@ -1,10 +1,8 @@
-size = prompt("Enter the size:");
+let size = 8;
 x="";
-k="";
 for (j=0; j<size; j++){
   for(i=0; i < size; i++){
-    k = i+j;
-    if(k%2==0){
+    if((i+j) % 2 == 0){
       x+="#";
     }
     else{

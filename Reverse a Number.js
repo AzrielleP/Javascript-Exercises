@@ -9,3 +9,5 @@ function reverseNumber(number){
 }
 
 console.log(reverseNumber(122));
+
+// To make the output a string, just remove 'Number' after return.

@@ -1,5 +1,5 @@
 //Return 1 when ANY odd bit of x equals 1; 0 otherwise.
-//from code wars?
+//from code wars
 
 function anyOdd(number){
     //Convert to binary

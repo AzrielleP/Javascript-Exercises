@@ -27,3 +27,24 @@ function howManyCoins(price){
 }
 
 console.log(howManyCoins(54));
+//Output:  { quarters: 2, dimes: 0, nickels: 0, pennies: 4 }
+
+// Another way of doing it:
+
+function numberOfCoins(money){
+    let coinCount =  [0,0,0,0];
+    let coins = [25, 15, 5, 1];
+    for (i = 0; money!=0; ){
+        if (money >= coins[i]) {
+            money -= coins[i]
+            coinCount[i]++; 
+        }
+        else i++;
+    }
+    return coinCount;
+}
+
+console.log(numberOfCoins(54));
+
+
+

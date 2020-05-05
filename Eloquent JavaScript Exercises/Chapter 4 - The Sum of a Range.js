@@ -11,7 +11,7 @@ console.log(range(10,2, -2));
 console.log(sum(range(10, 2, -2)));
 
 console.log(range_1(10,2, -2));
-console.log(sum(range_1(10, 2, -2)));
+console.log(sum(range_1(1,4)));
 
 function range (start, end, step =1){
     let listOfNum = [start];

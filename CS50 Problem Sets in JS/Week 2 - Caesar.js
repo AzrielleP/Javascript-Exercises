@@ -29,4 +29,4 @@ function caesar(plainText, key) {
   return cipher.join("");
 }
 
-console.log(caesar("hello, world", 50));
+console.log(caesar("i love you", 10));

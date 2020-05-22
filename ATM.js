@@ -8,7 +8,7 @@ Try to find minimal number of notes that must be used to repay in dollars, or ou
 
 function numberOfNotes(money){
     let billCount =  0;
-    let bills = [500, 100, 50, 20, 10];
+    let bills = [500, 200, 100, 50, 20, 10];
     let length = bills.length -1;
     for (i = 0; money>=0; ){
         if (money >= bills[i]) {
@@ -18,8 +18,6 @@ function numberOfNotes(money){
         }
         else i++;
         if (i > length) return -1;
-        
     }
 }
-
 console.log(numberOfNotes(770));

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Build a Table</title>
+
+    <script>
+      const MOUNTAINS = [
+        { name: "Kilimanjaro", height: 5895, place: "Tanzania" },
+        { name: "Everest", height: 8848, place: "Nepal" },
+        { name: "Mount Fuji", height: 3776, place: "Japan" },
+        { name: "Vaalserberg", height: 323, place: "Netherlands" },
+        { name: "Denali", height: 6168, place: "United States" },
+        { name: "Popocatepetl", height: 5465, place: "Mexico" },
+        { name: "Mont Blanc", height: 4808, place: "Italy/France" },
+      ];
+
+      function makeTable(table) {
+        let node = document.createElement("table");
+        let titles = Object.keys(table[0]);
+        let header = document.createElement("tr");
+
+        let headerName, row, array, col;
+
+        //Create the header
+        for (let i = 0; i <= titles.length - 1; i++) {
+          headerName = document.createElement("td");
+          headerName.appendChild(document.createTextNode(titles[i]));
+          header.appendChild(headerName);
+        }
+        node.appendChild(header);
+
+        //Create the body
+        for (let element of table) {
+          row = document.createElement("tr");
+          array = Object.values(element);
+          for (let detail of array) {
+            col = document.createElement("td");
+            col.appendChild(document.createTextNode(detail));
+            row.appendChild(col);
+          }
+          node.appendChild(row);
+        }
+        return node;
+      }
+
+      document.getElementById("mountains").appendChild(makeTable(MOUNTAINS));
+    </script>
+  </head>
+  <body>
+    <h1>Mountains</h1>
+
+    <div id="mountains"></div>
+  </body>
+</html>

@@ -1,2 +1,6 @@
 # Javascript-Exercises
-This repository contains all of the codes I made to answer some exercises found in Eloquent JavasScript and other places on the internet.
+This repository contains all of the answers for the exercises I found in the web. Here are my sources:
+
+- Eloquent JavaScript 3rd Ed.
+- CS50 by Harvard
+- Codewars
